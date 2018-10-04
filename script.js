@@ -4,4 +4,7 @@ window.mobilecheck = function() {
   return check;
 };
 
-console.log(check);
+if(check == true){
+	var demo = document.getElementById("demo");
+	demo.style.color = "red"; 
+}
