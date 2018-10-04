@@ -6,5 +6,5 @@ window.mobilecheck = function() {
 
 if(check == true){
 	var mobile = document.getElementById("mobile");
-	mobile.style.color = "red"; 
+	mobile.innerHTML = "You are using a mobile browser.";
 }
