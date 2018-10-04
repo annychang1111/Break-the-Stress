@@ -5,6 +5,6 @@ window.mobilecheck = function() {
 };
 
 if(check == true){
-	var demo = document.getElementById("demo");
-	demo.style.color = "red"; 
+	var mobile = document.getElementById("mobile");
+	mobile.style.color = "red"; 
 }
