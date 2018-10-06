@@ -9,7 +9,7 @@ if (isMobile) {
 
 if (isMobile) {
 	window.addEventListener('devicemotion', function(event) {
-		acc.innerHTML('acceleration: ' + event.acceleration.x + ' m/s2' + '(' + event + ')');
+		acc.innerHTML('acceleration: ' + event.acceleration.x + ' m/s2');
   		// console.log(event.acceleration.x + ' m/s2');
 	});
 }
