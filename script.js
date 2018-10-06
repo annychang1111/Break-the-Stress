@@ -9,7 +9,22 @@ if (isMobile) {
 
 if (isMobile) {
 	window.addEventListener('devicemotion', function(event) {
-		acc.innerHTML = "acceleration: " + event.acceleration.x + ' m/s2';
-  		console.log(event.acceleration.x + event.acceleration.y + event.acceleration.z + event.rotationRate.alpha);
+		acc.innerHTML = "acceleration: " + event.acceleration.x + ' m/s2' + "(" + event + ")";
+  		// console.log(event.acceleration.x + ' m/s2');
 	});
+}
+
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+	colorMode(HSB, 100);
+}
+
+function draw() {
+	
+}
+
+function mouseDragged(){
+	stroke(random(0, 100), 80, 80);
+	strokeWeight(random(1, 5));
+	line(pmouseX, pmouseY, mouseX, mouseY);
 }
