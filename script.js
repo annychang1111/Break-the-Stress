@@ -15,7 +15,7 @@ if (isMobile) {
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(600, 600);
 	colorMode(HSB, 100);
 }
 
